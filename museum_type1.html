@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>Экспонаты</title>
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="css/font-awesome.css">
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+      <script type="text/javascript" src="modalWindow.js"></script>
+      <script src="js/modernizr.js"></script>
+      <script src="js/jquery-2.1.1.js"></script>
+      <script src="js/main.js"></script>
+      <script>
+         $(window).on('load', function () {
+           $preloader = $('.loaderArea'),
+             $loader = $preloader.find('.container_pr');
+           $loader.fadeOut();
+           $preloader.delay(350).fadeOut('slow');
+         });
+      </script>
+   </head>
+   <body>
+      <!-- лаудер-->
+      <div class="loaderArea">
+         <div aria-busy="true" aria-label="Loading" role="progressbar" class="container_pr">
+            <div class="swing">
+               <div class="swing-l"></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div class="swing-r"></div>
+            </div>
+            <div class="shadow">
+               <div class="shadow-l"></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div class="shadow-r"></div>
+            </div>
+         </div>
+      </div>
+      <!--конец лаудер-->
+      <header>
+         <nav class="cd-main-nav-wrapper">
+            <ul class="cd-main-nav">
+               <li class="li_fivicon"><a href="http://www.bmstu.ru/"><img src="img/icon.png" alt="" class="img_fivicon"></a></li>
+               <li><a href="index.html" >Главная</a></li>
+               <li><a href="museum_list_v2.html" style="border-bottom: 1px dashed #de9f00; color: #de9f00;">Экспонаты</a></li>
+               <li><a href="#0">Контакты</a></li>
+               <li>
+                  <a href="#0" class="cd-subnav-trigger"><span>Типы</span></a>
+                  <ul>
+                     <li class="go-back"><a href="#0">Меню</a></li>
+                     <li><a href="museum_type1.html" style="border-bottom: 1px dashed white; text-decoration: none;">Первый тип</a></li>
+                     <li><a href="#0">Второй тип</a></li>
+                     <li><a href="#0">Третий тип</a></li>
+                     <li><a href="#0">Четвертый тип</a></li>
+                     <li><a href="#0">Пятый тип</a></li>
+                     <li><a href="#0" class="placeholder">Placeholder</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </nav>
+         <a href="#0" class="cd-nav-trigger"><span></span></a>
+      </header>
+      <div class="for_background">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-lg-2 col-md-1 hidden-sm hidden-xs">
+                     <div class="container-fluid">
+         <div class="row">
+            <div class="col-lg-12 col-md-10 hidden-sm hidden-xs">
+               <div class="FRAME_POSITION">
+                  <iframe src="menu_frame.html" align="left" scrolling="yes" style="height: 100vh; width: 18vw;" frameborder="0" noresize >
+                  Ваш браузер не поддерживает плавающие фреймы!
+                  </iframe>
+               </div>
+            </div>
+         </div>
+      </div>
+            </div>
+            <div class="hidden-lg col-md-2 hidden-sm hidden-xs"></div>
+            <div class="col-lg-9 col-md-7 col-sm-12 col-xs-12">
+               <div class="MUSEUM_EXP">
+                  <div class="container-fluid">
+                     <div class="row">
+                        <div class="col-lg-12 hidden-md col-sm-12 col-xs-12">
+                           <p class="MUSEUM_EXP_TEXT">Механизмы первого типа</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="MUSEUM_EXPONAT">
+                  <figure>
+                     <p class="MUSEUM_EXPONAT_HEADER">Модель E-14: Пространственный кулачковый механизм с карамысловым толкателем
+                        (Dimensional cam mechanism)
+                     </p>
+                     <div class="image__wrapper">
+                        <img src="img/E14.jpg" class="minimized" alt="клик для увеличения" />
+                     </div>
+                     <figcaption>
+                        <p class="MUSEUM_EXPONAT_MAIN" >Эта модель представляет собой пространственный кулачковый механизм с карамысловым толкателем.
+                           От ручки вращеие передается кулачку через коническую зубчатую передачу. Кулачок выполнен в виде цилиндра с верхней кромкой выполненной по определенному профилю, который определяет закон движения коромысла.
+                           В этом кулачковом механизме прижимание толкателя к кулачку производится пуржиной (силове замыкание).
+                           Передача движения от толкателя к кулачку в данном механизме невозможна.
+                           По косвенным признакам модель является одним из механизмов коллекции Рело, изготовлена в Мастерских Густава Фойгта (Берлин, Германия)
+                        </p>
+                     </figcaption>
+                  </figure>
+                  <div class="modal fade" id="myModal_3d" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                     <div class="modal-dialog">
+                        <div class="modal-content">
+                           <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                              <h4 class="modal-title" id="myModalLabel">Модель E-14</h4>
+                           </div>
+                           <div class="modal-body">
+                              <div class="sketchfab-embed-wrapper"><iframe width="100%" height="100%" src="https://sketchfab.com/models/30900589509041a4950a0134f4156870/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+                              </div>
+                           </div>
+                           <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="modal fade" id="myModal_video" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                     <div class="modal-dialog">
+                        <div class="modal-content">
+                           <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                              <h4 class="modal-title" id="myModalLabel">Модель E-14</h4>
+                           </div>
+                           <div class="modal-body">
+                              <video width="90%" height="90%" controls >
+                                 <source src="primer.mp4" type="video/mp4">
+                              </video>
+                           </div>
+                           <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-1 col-md-2 hidden-sm hidden-xs">
+               <nav class="menu">
+                  <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+                  <label class="menu-open-button" for="menu-open">
+                  <span class="hamburger hamburger-1"></span>
+                  <span class="hamburger hamburger-2"></span>
+                  <span class="hamburger hamburger-3"></span>
+                  </label>
+                  <a href="#" class="menu-item" data-toggle="modal" data-target="#myModal_video"> <i class="fa fa-file-video-o"></i> </a>
+                  <a href="#" class="menu-item"> <i class="fa fa-search-plus">
+                  </i></a>
+                  <a href="#" class="menu-item" data-toggle="modal" data-target="#myModal_3d"> <i class="fa fa-cog"></i> </a>
+               </nav>
+            </div>
+         </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+   </body>
+</html>

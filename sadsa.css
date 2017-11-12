@@ -1,0 +1,25 @@
+@-webkit-keyframes triangle {
+	0% {transform: translate(13vw,22vh);  opacity: 1;}
+	25% { 	width: 130px;
+	height: 130px;
+	border: 1px solid white;
+	background: white;
+	border-radius: 100%; opacity: 0.8; }
+	50% { background: red; border-radius: 0%;  border: 1px solid red;}
+	75% { border: 20px solid white; width: 130px;
+	height: 130px; opacity: 0.5; }
+	93% { width: 130px;
+	height: 130px;
+	border: 1px solid white;
+	background: green;
+	border-radius: 100%; 
+	opacity: 0.3;}
+	100% { opacity: 0; }
+}
+
+.blocc  {
+  -webkit-animation: triangle 4s infinite; /* Safari 4+ */
+  -moz-animation:    triangle 4s infinite; /* Fx 5+ */
+  -o-animation:      triangle 4s infinite; /* Opera 12+ */
+  animation:         triangle 4s infinite; /* IE 10+, Fx 29+ */
+}
